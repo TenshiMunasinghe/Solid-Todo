@@ -10,6 +10,10 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@vercel": "link:@types/@vercel",
+    "@vercel/build-utils": "^3.1.1",
+    "@vercel/frameworks": "^1.0.0",
+    "@vercel/node": "^1.15.4",
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.0.24",
@@ -18,7 +22,12 @@
     "vite-plugin-solid": "^2.2.6"
   },
   "dependencies": {
+    "@solid-primitives/destructure": "^0.1.0",
+    "@tailwindcss/forms": "^0.5.2",
     "@types/uuid": "^8.3.4",
+    "axios": "^0.27.2",
+    "solid-app-router": "^0.3.3",
+    "solid-icons": "^0.4.12",
     "solid-js": "^1.4.2",
     "uuid": "^8.3.2"
   }
