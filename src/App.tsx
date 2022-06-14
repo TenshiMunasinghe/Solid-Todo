@@ -14,7 +14,7 @@ const App: Component = () => {
     <div class='max-w-5xl px-8 py-16 mx-auto'>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/video' element={<Watch />} />
+        <Route path='/watch' element={<Watch />} />
       </Routes>
     </div>
   )
