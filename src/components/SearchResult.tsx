@@ -13,7 +13,7 @@ const SearchResult = (props: Props) => {
       <Show
         when={!props.data?.length && !props.isLoading}
         fallback={
-          <div class='grid grid-cols-4 gap-6'>
+          <div class='grid grid-cols-4 gap-x-3 gap-y-12'>
             <For each={props.data}>{item => <Video data={item} />}</For>
           </div>
         }>
