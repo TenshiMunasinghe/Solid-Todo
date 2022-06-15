@@ -10,6 +10,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.0",
     "@vercel": "link:@types/@vercel",
     "@vercel/build-utils": "^3.1.1",
     "@vercel/frameworks": "^1.0.0",
