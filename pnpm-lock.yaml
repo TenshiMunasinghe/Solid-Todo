@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@solid-primitives/destructure': ^0.1.0
+  '@solid-primitives/intersection-observer': ^1.3.0
   '@tailwindcss/forms': ^0.5.2
   '@types/uuid': ^8.3.4
   '@vercel': link:@types/@vercel
@@ -22,6 +23,7 @@ specifiers:
 
 dependencies:
   '@solid-primitives/destructure': 0.1.0_solid-js@1.4.2
+  '@solid-primitives/intersection-observer': 1.3.0_solid-js@1.4.2
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.0.24
   '@types/uuid': 8.3.4
   axios: 0.27.2
@@ -410,6 +412,15 @@ packages:
     resolution: {integrity: sha512-yplDSAO699mBWuAwdeZtBeLO54BO2GSNor1aN7VuQ09UNjbLxr+fyjzJSEh/rXvSvXF8C5jTicxW0mw/YFMshw==}
     peerDependencies:
       solid-js: ^1.3.0
+    dependencies:
+      '@solid-primitives/utils': 1.5.2_solid-js@1.4.2
+      solid-js: 1.4.2
+    dev: false
+
+  /@solid-primitives/intersection-observer/1.3.0_solid-js@1.4.2:
+    resolution: {integrity: sha512-A0I/fmx7qBx4z7m7a1gEwdjlpDeRIu/OHMnZ6DKvuwV07r58bSAJ5LHdrkR4dPRa4U9HO359JRUKVUfe4l4ZUA==}
+    peerDependencies:
+      solid-js: ^1.3.1
     dependencies:
       '@solid-primitives/utils': 1.5.2_solid-js@1.4.2
       solid-js: 1.4.2

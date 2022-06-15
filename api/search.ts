@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export default async (request: VercelRequest, response: VercelResponse) => {
   try {
-    const { q } = request.query
+    const { q, pageToken } = request.query
 
     if (!process.env.VITE_API_KEY) {
       response.status(500).send('Invalid Api Key')
@@ -17,7 +17,7 @@ export default async (request: VercelRequest, response: VercelResponse) => {
           process.env.VITE_API_KEY
         }&type=video&part=snippet&maxResults=24&q=${
           q ? `${q} asmr` : 'asmr バイノーラル'
-        }`
+        }&pageToken=${pageToken}`
       )
     )
 
