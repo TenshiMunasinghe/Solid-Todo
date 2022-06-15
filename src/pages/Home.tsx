@@ -14,8 +14,11 @@ const Home = () => {
   const [data] = createResource<YT, { q: string; token: string }>(
     () => ({ q: searchParams.q || '', token: pageToken() }),
     async ({ q, token }, currentData) => {
-      const res = await axios.get(`/api/search?q=${q}&pageToken=${token}`)
-      const items = [...(currentData?.value?.items || []), ...res.data.items]
+      const res = await axios.get<YT>(`/api/search?q=${q}&pageToken=${token}`)
+      const items = [
+        ...(currentData?.value?.items || []),
+        ...(res.data.items || []),
+      ]
       return { ...res.data, items }
     }
   )
